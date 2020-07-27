@@ -12,7 +12,7 @@
 <c:import url="menu.jsp" />
 <br/><br/>
 Select Search Criteria
-<form method="get" action="search.jsp">
+<form method="post" action="search.jsp">
 <table>
 	<tr><td><input type="radio" name="criteria" value="1" />By Book ID</td></tr>
 	<tr><td><input type="radio" name="criteria" value="2" />By Department</td></tr>

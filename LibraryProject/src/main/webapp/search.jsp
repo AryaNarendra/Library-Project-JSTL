@@ -20,7 +20,7 @@
 		user="root"
 		password="root" />
 
-<form action="issueBooks.jsp" method="get">
+<form action="issueBooks.jsp" method="post">
 <c:if test="${search eq 1}">
 <sql:query var="searchId" dataSource="${conn}">
 	SELECT * FROM BOOKS WHERE ID=? AND ID NOT IN (SELECT BOOKID FROM TRANBOOK WHERE USERNAME=?)

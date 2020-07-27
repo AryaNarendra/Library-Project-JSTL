@@ -1,4 +1,14 @@
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
 <h4>Welcome : <c:out value="${userName}" /></h4>
 
 <form method="post" action="logout.jsp">
@@ -15,4 +25,5 @@
 	<td><a href="history.jsp">History</a></td>
 </tr>
 </table>
-
+</body>
+</html>
